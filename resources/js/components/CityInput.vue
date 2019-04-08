@@ -8,8 +8,8 @@
 
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 float-right">
             <div class="search-box">
-                <input type="text" class="search-txt" placeholder="Your city name" name="q" v-model="cityName" @keyup.enter.native="sendNameCity()">
-                <a class="search-btn">
+                <input type="text" class="search-txt" placeholder="Your city name" name="q" v-model="cityName" @keyup.enter="sendNameCity">
+                <a class="search-btn" @click="sendNameCity()">
                     <i class="fas fa-search-location" @click="sendNameCity()"></i>
                 </a>
             </div>

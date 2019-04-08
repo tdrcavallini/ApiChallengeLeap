@@ -37921,14 +37921,6 @@ var render = function() {
               attrs: { type: "text", placeholder: "Your city name", name: "q" },
               domProps: { value: _vm.cityName },
               on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.cityName = $event.target.value
-                }
-              },
-              nativeOn: {
                 keyup: function($event) {
                   if (
                     !$event.type.indexOf("key") &&
@@ -37936,21 +37928,38 @@ var render = function() {
                   ) {
                     return null
                   }
-                  return _vm.sendNameCity()
+                  return _vm.sendNameCity($event)
+                },
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.cityName = $event.target.value
                 }
               }
             }),
             _vm._v(" "),
-            _c("a", { staticClass: "search-btn" }, [
-              _c("i", {
-                staticClass: "fas fa-search-location",
+            _c(
+              "a",
+              {
+                staticClass: "search-btn",
                 on: {
                   click: function($event) {
                     return _vm.sendNameCity()
                   }
                 }
-              })
-            ])
+              },
+              [
+                _c("i", {
+                  staticClass: "fas fa-search-location",
+                  on: {
+                    click: function($event) {
+                      return _vm.sendNameCity()
+                    }
+                  }
+                })
+              ]
+            )
           ])
         ]
       )
