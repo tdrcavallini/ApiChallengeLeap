@@ -7,20 +7,14 @@
                 </div>
                 <div id="boxscroll" class="recommended-places-list">
                     <div class="media" v-for="place in recommendedPlaces">
-
                         <div class="media-body">
-
                             <h4 class="media-heading">{{ place.name }}</h4>
                             <p>{{ place.address }}</p>
                             <p><i class="fas fa-tag"></i> {{ place.categories[0].name }}</p>
-
-
                         </div>
                     </div>
 
                 </div>
-
-
 
             </div>
         </div>

@@ -21,8 +21,9 @@ class City implements Jsonable
         $this->location = $geoLocation;
     }
 
+
     /**
-     * @return mixed
+     * @return Weather
      */
     public function getWeather()
     {

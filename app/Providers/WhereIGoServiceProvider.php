@@ -5,6 +5,7 @@ use App\WhereIGo\Domain\Providers\RecommendedPlaceProvider;
 use App\WhereIGo\Domain\Providers\WeatherProvider;
 use App\WhereIGo\Infrastructure\FoursquareRecommendedPlaceProvider;
 use App\WhereIGo\Infrastructure\OpenWeatherMapWeatherProvider;
+use App\WhereIGo\Infrastructure\WeatherNetworkForecast;
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
 

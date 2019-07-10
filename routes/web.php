@@ -11,8 +11,6 @@
 |
 */
 
-use GuzzleHttp\Client;
-
 Route::get('/{city}', [
     'uses' => 'WhereIGoController@getCityInformation'
 ]);

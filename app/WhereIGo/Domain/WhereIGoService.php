@@ -5,7 +5,6 @@ namespace App\WhereIGo\Domain;
 use App\WhereIGo\Domain\Entities\City;
 use App\WhereIGo\Domain\Providers\RecommendedPlaceProvider;
 use App\WhereIGo\Domain\Providers\WeatherProvider;
-use App\WhereIGo\Domain\ValueObjects\GeoLocation;
 
 class WhereIGoService
 {

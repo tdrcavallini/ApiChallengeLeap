@@ -24,6 +24,7 @@ class OpenWeatherMapWeatherProvider implements WeatherProvider
      * @param $cityName
      * @return Weather
      */
+
     public function getWeatherByCity($cityName): Weather
     {
 
